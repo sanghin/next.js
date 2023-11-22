@@ -37,7 +37,9 @@ interface WebServerOptions extends Options {
     pagesType: 'app' | 'pages' | 'root'
     loadComponent: (page: string) => Promise<LoadComponentsReturnType | null>
     extendRenderOpts: Partial<BaseServer['renderOpts']> &
-      Pick<BaseServer['renderOpts'], 'buildId'>
+      Pick<BaseServer['renderOpts'], 'buildId'> & {
+        serverActionsManifest?: any
+      }
     renderToHTML:
       | typeof import('./app-render/app-render').renderToHTMLOrFlight
       | undefined
