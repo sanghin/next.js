@@ -167,6 +167,9 @@ importers:
       '@types/trusted-types':
         specifier: 2.0.3
         version: 2.0.3
+      '@types/webpack-sources':
+        specifier: 3.2.3
+        version: 3.2.3
       '@typescript-eslint/eslint-plugin':
         specifier: 6.14.0
         version: 6.14.0(@typescript-eslint/parser@6.14.0)(eslint@7.24.0)(typescript@5.2.2)
@@ -6862,6 +6865,14 @@ packages:
       '@types/node': 20.2.5
       '@types/source-list-map': 0.1.2
       source-map: 0.6.1
+    dev: true
+
+  /@types/webpack-sources@3.2.3:
+    resolution: {integrity: sha512-4nZOdMwSPHZ4pTEZzSp0AsTM4K7Qmu40UKW4tJDiOVs20UzYF9l+qUe4s0ftfN0pin06n+5cWWDJXH+sbhAiDw==}
+    dependencies:
+      '@types/node': 20.2.5
+      '@types/source-list-map': 0.1.2
+      source-map: 0.7.4
     dev: true
 
   /@types/ws@8.2.0:
